@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fce4ec;  /* Pastel pink background */
+  color: #6a1b9a;  /* Darker pink for text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Container for the entire app */
+.app-container {
+  background: #fff;  /* White background for the main container */
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+h1.title {
+  color: #d81b60;  /* Pastel dark pink */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Input and button styles */
+.file-input {
+  background-color: #f48fb1;  /* Light pastel pink */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  width: 80%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.file-input:hover {
+  background-color: #f06292;  /* Darker pastel pink */
+}
+
+.upload-button {
+  background-color: #ec407a;  /* Bright pastel pink */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 60%;
+}
+
+.upload-button:hover {
+  background-color: #d81b60;  /* Darker pink on hover */
+  transform: scale(1.05);  /* Slight scaling effect */
+}
+
+.upload-button:disabled {
+  background-color: #e1bee7;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-message {
+  margin-top: 20px;
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Labels Section */
+.labels-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #d81b60;
+  margin-bottom: 10px;
+}
+
+.label {
+  background-color: #f8bbd0;  /* Light pink background for results */
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #880e4f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.label:hover {
+  background-color: #f06292;  /* Slightly darker pink on hover */
+  transform: translateY(-5px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
